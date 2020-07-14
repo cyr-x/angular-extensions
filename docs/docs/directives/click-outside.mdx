@@ -1,0 +1,36 @@
+---
+title: ClickOutside-Directive
+sidebar_label: ClickOutside
+---
+
+### Configuration
+
+```ts
+import { NGX_CLICK_OUTSIDE_CONFIG } from '@angular/common';
+
+@NgModule({
+  providers: [
+    {
+      provide: NGX_CLICK_OUTSIDE_CONFIG,
+      useValue: {
+        events: ['click', 'touchstart'],
+      },
+    },
+  ],
+})
+export class AppModule {
+}
+```
+
+### Usage
+```html
+<div (ngxClickOutside)="onOutsideClick($event)">
+</div>
+```
+
+```html
+<div (ngxClickOutside)="onOutsideClick($event)" [ngxClickoutsideActive]="false">
+</div>
+```
+
+***TODO: Add better documentation***

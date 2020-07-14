@@ -1,0 +1,29 @@
+{
+  "name": "@ngex/common",
+  "version": "0.0.1",
+  "description": "Angular extensions",
+  "keywords": [
+    "angular",
+    "angular extensions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyr-x/angular-extensions",
+    "directory": "libs/common"
+  },
+  "bugs": {
+    "url": "https://github.com/cyr-x/angular-extensions/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Kevin Wardenga",
+    "url": "https://github.com/cyr-x"
+  },
+  "peerDependencies": {
+    "@angular/common": "^10.0.3",
+    "@angular/core": "^10.0.3"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

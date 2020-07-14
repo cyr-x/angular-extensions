@@ -1,0 +1,31 @@
+---
+title: DocumentRef
+---
+
+### Configuration
+
+By default the document injected by `DOCUMENT` from `@angular/common` is used. To override it use:
+
+```ts
+import { DOCUMENT } from '@angular/common';
+
+@NgModule({
+  providers: [
+    { provide: DOCUMENT, useValue: {} }
+  ],
+})
+export class AppModule {
+}
+```
+
+### Usage
+
+```ts
+import { DocumentRef } from '@ngex/common';
+
+export class MyClass {
+  constructor(documentRef: DocumentRef) {
+    console.log(documentRef.nativeDocument);
+  }
+}
+```

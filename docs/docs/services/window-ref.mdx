@@ -1,0 +1,31 @@
+---
+title: WindowRef
+---
+
+### Configuration
+
+By default the global window is used. To override it use:
+
+```ts
+import { WINDOW } from '@angular/common';
+
+@NgModule({
+  providers: [
+    { provide: WINDOW, useValue: {} }
+  ],
+})
+export class AppModule {
+}
+```
+
+### Usage
+
+```ts
+import { WindowRef } from '@ngex/common';
+
+export class MyClass {
+  constructor(windowRef: WindowRef) {
+    console.log(windowRef.nativeWindow);
+  }
+}
+```

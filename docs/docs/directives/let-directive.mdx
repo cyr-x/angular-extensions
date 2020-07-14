@@ -1,0 +1,17 @@
+---
+title: Let-Directive
+sidebar_label: Let
+---
+
+### Usage
+```html
+<div *ngxLet="myObject.property as property">
+  {{ property }}
+</div>
+```
+
+```html
+<div *ngxLet="myObservable$ | async as value">
+  {{ value }}
+</div>
+```

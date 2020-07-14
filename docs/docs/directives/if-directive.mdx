@@ -1,0 +1,48 @@
+---
+title: If-Directive
+sidebar_label: If
+---
+
+### Configuration
+
+By default the input value is evaluated using the `defaultValidationFn`.
+
+| Input                 |     Result
+| -------------         | -----------
+| `undefined` `null`, `NaN`, `''` or `[]` | `false`
+| `{}`, `0`, `'0'`, `abc`, `[1]`          | `true`
+
+To override this behavior provide your own validation function via `NGX_IF_VALIDATION`
+
+```ts
+import { NGX_IF_VALIDATION } from '@ngex/common';
+
+export function myValidationFn(value: unknown): boolean {
+  return !!value;
+}
+
+@NgModule({
+  providers: [
+    { provide: NGX_IF_VALIDATION, useValue: myValidationFn }
+  ],
+})
+export class AppModule {
+}
+```
+
+### Usage
+
+Using a simple array.
+```html
+<div *ngxIf="myArray">
+  This text is only visible if #myArray has at least 1 item.
+</div>
+```
+
+Using an `Observable` together with the `async` pipe.
+
+```html
+<div *ngxIf="myArray$ | async as myArray">
+  This text is only visible if #myArray has at least 1 item.
+</div>
+```
