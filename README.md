@@ -5,5 +5,5 @@
 <hr />
 
 
-- 🚀 Learn about it on the [docs site](https://cyr-x.github.io/angular-extensions/)
+- 🚀 Learn about it on the [docs site](https://cyr-x.github.io/angular-extensions/docs/)
 
