@@ -6,5 +6,4 @@
 
 
 - 🚀 Learn about it on the [docs site](https://cyr-x.github.io/angular-extensions/)
-- 🚀 See it in action [here]()
 
