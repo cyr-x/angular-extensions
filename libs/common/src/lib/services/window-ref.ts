@@ -5,6 +5,7 @@ export const WINDOW = new InjectionToken<Window>('@ngex/window', {
   factory: () => window,
 });
 
+//@dynamic
 @Injectable({ providedIn: 'root' })
 export class WindowRef<T = Window> {
   public get nativeWindow() {

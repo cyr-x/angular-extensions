@@ -1,6 +1,7 @@
 import { Injectable, Inject, InjectionToken } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
+//@dynamic
 @Injectable({ providedIn: 'root' })
 export class DocumentRef<T = Document> {
   public get nativeDocument() {
