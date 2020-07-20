@@ -1,11 +1,11 @@
 module.exports = {
   title: 'Angular Extensions',
   tagline: '',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://github.com/cyr-x',
+  baseUrl: '/angular-extensions/',
   favicon: 'img/favicon.ico',
-  organizationName: 'cyr-x', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'cyr-x',
+  projectName: 'angular-extensions',
   themeConfig: {
     navbar: {
       title: 'Home',
