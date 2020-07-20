@@ -1,10 +1,13 @@
 {
   "name": "@ngex/common",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Angular extensions",
   "keywords": [
     "angular",
-    "angular extensions"
+    "angular extensions",
+    "ng if",
+    "ng let",
+    "ng click outside"
   ],
   "repository": {
     "type": "git",
