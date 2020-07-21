@@ -4,7 +4,6 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points",
-    "prepublishOnly": "npm run test:libs && npm run build:libs",
     "ng": "nx",
     "nx": "nx",
     "standard-version": "standard-version",
