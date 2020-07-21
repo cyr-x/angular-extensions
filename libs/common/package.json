@@ -23,8 +23,9 @@
     "url": "https://github.com/cyr-x"
   },
   "peerDependencies": {
-    "@angular/common": "^10.0.3",
-    "@angular/core": "^10.0.3"
+    "@angular/common": ">=9.0.0",
+    "@angular/core": ">=9.0.0",
+    "zone.js": ">=0.10.2"
   },
   "dependencies": {
     "tslib": "^2.0.0"
