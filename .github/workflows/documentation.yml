@@ -1,4 +1,4 @@
-name: documentation
+name: Generate and publish docs
 
 on:
   pull_request:
@@ -18,13 +18,7 @@ jobs:
       - name: Test Build
         run: |
           cd docs
-          if [ -e yarn.lock ]; then
-          yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
           npm ci
-          else
-          npm i
-          fi
           npm run build
   gh-release:
     if: github.event_name != 'pull_request'
@@ -55,11 +49,5 @@ jobs:
           cd docs
           git config --global user.email "actions@gihub.com"
           git config --global user.name "gh-actions"
-          if [ -e yarn.lock ]; then
-          yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
           npm ci
-          else
-          npm i
-          fi
-          npx docusaurus deploy
+          npm run deploy

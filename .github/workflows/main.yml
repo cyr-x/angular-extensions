@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -31,9 +30,13 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
-    - run: npm i
-    - run: npm run lint
-    - run: npm test
-    - run: npm run build:prod
+    - name: Install dependencies
+      run: npm ci
+    - name: Linting
+      run: npm run lint
+    - name: Run tests
+      run: npm run test:libs
+    - name: Build
+      run: npm run build:libs
       env:
         CI: true
