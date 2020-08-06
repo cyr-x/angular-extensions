@@ -36,7 +36,7 @@
     "@angular/cli": "10.0.4",
     "@angular/compiler-cli": "10.0.5",
     "@angular/language-service": "10.0.5",
-    "@ngneat/spectator": "5.12.0",
+    "@ngneat/spectator": "5.13.0",
     "@nrwl/angular": "10.0.6",
     "@nrwl/jest": "10.0.6",
     "@nrwl/workspace": "10.0.6",
