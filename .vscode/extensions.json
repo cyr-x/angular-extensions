@@ -3,6 +3,7 @@
     "editorconfig.editorconfig",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "codezombiech.gitignore"
+    "codezombiech.gitignore",
+    "firsttris.vscode-jest-runner"
   ]
 }
