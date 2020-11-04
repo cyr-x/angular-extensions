@@ -46,7 +46,7 @@
     "codelyzer": "6.0.1",
     "dotenv": "8.2.0",
     "eslint": "7.10.0",
-    "jest": "26.5.2",
+    "jest": "26.6.3",
     "jest-preset-angular": "8.3.1",
     "ng-packagr": "10.1.2",
     "prettier": "2.1.2",
