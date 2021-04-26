@@ -47,7 +47,7 @@
     "dotenv": "8.2.0",
     "eslint": "7.10.0",
     "jest": "26.5.2",
-    "jest-preset-angular": "8.3.1",
+    "jest-preset-angular": "8.4.0",
     "ng-packagr": "10.1.2",
     "prettier": "2.1.2",
     "standard-version": "9.0.0",
